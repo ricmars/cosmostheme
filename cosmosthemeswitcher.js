@@ -4,12 +4,12 @@ cosmosCSS.setAttribute('type','text/css');
 cosmosCSS.setAttribute('href','https://ricmars.github.io/cosmostheme/cosmosthemeswitcher.css');
 var cosmosDevToolbar=document.createElement('div');
 cosmosDevToolbar.className = 'colorpicker';
-var colorSwatches = { 'light' : ['#FFF', '#FFF', '#000'],
-            'dark' : ['#191c24', '#000', '#FFF'], 
-            'flame' : ['#D23200', '#000', '#FFF'], 
-            'mantis' : ['#53832D', '#000', '#FFF'],
-            'honey flower' : ['#5F257E', '#000', '#FFF'],
-            'deep cerise': ['#D3197C', '#000', '#FFF'],
+var colorSwatches = { 'light' : ['#FFF', '#FFF', '#000', '#006BBD'],
+            'dark' : ['#191c24', '#000', '#FFF', '#8db4fd'], 
+            'flame' : ['#D23200', '#000', '#FFF','#8db4fd'], 
+            'mantis' : ['#53832D', '#000', '#FFF','#8db4fd'],
+            'honey flower' : ['#5F257E', '#000', '#FFF','#8db4fd'],
+            'deep cerise': ['#D3197C', '#000', '#FFF','#8db4fd'],
           };
 var cssInlineVars;
 function CloseCosmosDevTools(event) {
@@ -30,10 +30,12 @@ function switchColor(event) {
   var generalBgColor = colorSwatches[themeColor][0];
   var generalPageColor = colorSwatches[themeColor][1];
   var generalTextColor = colorSwatches[themeColor][2];
+  var generalInteractiveColor = colorSwatches[themeColor][3];
   var cssCustomVarStyles = `:root {
       --generalBgColor: ${generalBgColor};
       --generalPageColor: ${generalPageColor};
-        --generalTextColor: ${generalTextColor};
+      --generalTextColor: ${generalTextColor};
+      --generalInteractiveColor: ${generalInteractiveColor};
     }`;
   if(cssInlineVars) {
     cssInlineVars.parentNode.removeChild(cssInlineVars);
