@@ -10,8 +10,11 @@ var colorSwatches = { 'light' : ['#FFF', '#FFF', '#000'],
 var cssInlineVars;
 function switchColor(event) {
   var themeColor = event.target.textContent;
-  if(themeColor === '' || typeof (colorSwatches[themeColor]) === 'undefined') {
+  if(event.target.tagName === 'SVG' || event.target.className === 'icon-close') {
     document.body.removeChild(cosmosDevToolbar);
+    return;
+  }
+   if(typeof (colorSwatches[themeColor]) === 'undefined') {
     return;
   }
   var generalBgColor = colorSwatches[themeColor][0];
