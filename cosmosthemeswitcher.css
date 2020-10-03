@@ -95,6 +95,7 @@ body {
     bottom:10px;
     left:0;
     right:0;
+    display:flex;
 }
 .colorpicker > div {
     display:flex;
