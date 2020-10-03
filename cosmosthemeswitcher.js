@@ -9,13 +9,13 @@ cosmosCSS.setAttribute('href','https://ricmars.github.io/cosmostheme/cosmostheme
 var cosmosDevToolbar=document.createElement('div');
 var cosmosInitTool = false;
 cosmosDevToolbar.className = 'colorpicker';
-/* List the different themes by background color, page bg color, text color, interactive color */
-var colorSwatches = { 'light' : ['#FFF', '#FFF', '#000', '#006BBD'],
-            'dark' : ['#191c24', '#000', '#FFF', '#8db4fd'], 
-            'flame' : ['#D23200', '#000', '#FFF','#8db4fd'], 
-            'mantis' : ['#53832D', '#000', '#FFF','#8db4fd'],
-            'honey flower' : ['#5F257E', '#000', '#FFF','#8db4fd'],
-            'deep cerise': ['#D3197C', '#000', '#FFF','#8db4fd'],
+/* List the different themes by background color, page bg color, text color, interactive color, case header bg color */
+var colorSwatches = { 'light' : ['#FFF', '#FFF', '#000', '#006BBD','#ccc'],
+            'dark' : ['#191c24', '#000', '#FFF', '#8db4fd','#191c24'], 
+            'flame' : ['#D23200', '#000', '#FFF','#8db4fd','#9c0000'], 
+            'mantis' : ['#53832D', '#000', '#FFF','#8db4fd','#33610d'],
+            'honey flower' : ['#5F257E', '#000', '#FFF','#8db4fd','#4f0063'],
+            'deep cerise': ['#D3197C', '#000', '#FFF','#8db4fd','#9a0151'],
           };
 var cssInlineVars;
 function CloseCosmosDevTools(event) {
@@ -39,11 +39,13 @@ function switchColor(event) {
   var generalPageColor = colorSwatches[themeColor][1];
   var generalTextColor = colorSwatches[themeColor][2];
   var generalInteractiveColor = colorSwatches[themeColor][3];
+  var caseHeaderBgColor = colorSwatches[themeColor][4];
   var cssCustomVarStyles = `:root {
       --generalBgColor: ${generalBgColor};
       --generalPageColor: ${generalPageColor};
       --generalTextColor: ${generalTextColor};
       --generalInteractiveColor: ${generalInteractiveColor};
+      --caseHeaderBgColor: ${caseHeaderBgColor};
     }`;
   if(cssInlineVars) {
     cssInlineVars.parentNode.removeChild(cssInlineVars);
