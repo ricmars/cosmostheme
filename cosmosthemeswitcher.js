@@ -1,3 +1,7 @@
+var cosmosCSS=document.createElement('link');
+cosmosCSS.setAttribute('rel','stylesheet');
+cosmosCSS.setAttribute('type','text/css');
+cosmosCSS.setAttribute('href','https://ricmars.github.io/cosmostheme/cosmosthemeswitcher.css');
 var cosmosDevToolbar=document.createElement('div');
 cosmosDevToolbar.className = 'colorpicker';
 var colorSwatches = { 'light' : ['#FFF', '#FFF', '#000'],
@@ -53,10 +57,6 @@ function RunCosmosDevTools() {
   colorPicker += `</div></div>`;
   cosmosDevToolbar.innerHTML = colorPicker;
   document.body.appendChild(cosmosDevToolbar);
-  var cosmosCSS=document.createElement('link');
-  cosmosCSS.setAttribute('rel','stylesheet');
-  cosmosCSS.setAttribute('type','text/css');
-  cosmosCSS.setAttribute('href','https://ricmars.github.io/cosmostheme/cosmosthemeswitcher.css');
   document.body.appendChild(cosmosCSS);
 }
 RunCosmosDevTools();
