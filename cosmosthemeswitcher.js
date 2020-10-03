@@ -25,6 +25,7 @@ function switchColor(event) {
        document.body.removeChild(cosmosCSS);
     }
     document.body.removeChild(cosmosDevToolbar);
+    document.body.removeChild(cosmosBaseCSS);
     return;
   }
   if(typeof (colorSwatches[themeColor]) === 'undefined') {
