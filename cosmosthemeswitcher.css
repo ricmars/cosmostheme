@@ -84,6 +84,13 @@ body {
     color:var(--generalTextColor)!important;
 }
 
+a, a:link, a:visited {
+    color:var(--generalInteractiveColor);
+}
+.Strong.pzbutton {
+    background-color:var(--generalInteractiveColor);
+}
+
 .menu-format-case-details.menu-bar.menu-horizontal > .menu-item.menu-item-active > .menu-item-anchor .menu-item-title, 
 .menu-format-case-details.menu-bar.menu-vertical > .menu-item.menu-item-active > .menu-item-anchor .menu-item-title,
 .menu-format-case-details.menu-bar.menu-horizontal > .menu-item > .menu-item-anchor .menu-item-title, 
