@@ -10,7 +10,7 @@ var colorSwatches = { 'light' : ['#FFF', '#FFF', '#000'],
 var cssInlineVars;
 function switchColor(event) {
   var themeColor = event.target.textContent;
-  if(event.target.tagName === 'svg' || event.target.className === 'icon-close') {
+  if(event.target.tagName === 'svg' || event.target.parentNode.tagName === 'svg' || event.target.className === 'icon-close') {
     document.body.removeChild(cosmosDevToolbar);
     return;
   }
