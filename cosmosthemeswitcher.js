@@ -42,3 +42,4 @@ function RunCosmosDevTools() {
     cosmosCSS.setAttribute('href','https://ricmars.github.io/cosmostheme/cosmosthemeswitcher.css');
     document.body.appendChild(cosmosCSS);
 }
+RunCosmosDevTools();
