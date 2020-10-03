@@ -28,9 +28,9 @@ body {
 </head>
 <body>
   <h1>Cosmos Theme Switcher bookmarklet</h1>
-  <p>This bookmarklet allows to switch theme when using a Pega application running on Cosmos Rules.</p>
+  <p>This bookmarklet allows to switch theme when using a Pega application running on Cosmos Rules. You can find the source code on <a href='https://github.com/ricmars/cosmostheme'>Github.com</a></p>
   <p>To use the bookmarklet, just drag and drop the button called 'Cosmos theme switcher' into your bookmark toolbar. Then when you are on a Cosmos app, click on the bookmark to turn on theme switcher</p>
-  <a class='bookmarklet' onclick="alert(&quot;To install Cosmos theme switcher, drag and drop this link into your favorites/bookmark bar.&quot;);return false;" 
+  <a class='bookmarklet' onclick="alert(&quot;To install the Cosmos theme switcher, just drag and drop this button into your favorites or bookmark bar.&quot;);return false;" 
     rel="bookmark" href="javascript:void((function(){if(typeof RunCosmosDevTools === 'undefined') { cosmosDevTool=document.createElement('script');cosmosDevTool.setAttribute('src','https://ricmars.github.io/cosmostheme/cosmosthemeswitcher.js'); document.body.appendChild(cosmosDevTool); } else { RunCosmosDevTools();}})());">Cosmos theme switcher</a>
   <button class='try-button' onclick="RunCosmosDevTools();">Try the theme switcher</button>
 </body>
