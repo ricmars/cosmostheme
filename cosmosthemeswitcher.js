@@ -1,7 +1,8 @@
-var cosmosCSS=document.createElement('link');
-cosmosCSS.setAttribute('rel','stylesheet');
-cosmosCSS.setAttribute('type','text/css');
-cosmosCSS.setAttribute('href','https://ricmars.github.io/cosmostheme/cosmosthemeswitcher.css');
+var cosmosBaseCSS=document.createElement('link');
+cosmosBaseCSS.setAttribute('rel','stylesheet');
+cosmosBaseCSS.setAttribute('type','text/css');
+cosmosBaseCSS.setAttribute('href','https://ricmars.github.io/cosmostheme/cosmosthemebase.css');
+var cosmosCSS;
 var cosmosDevToolbar=document.createElement('div');
 cosmosDevToolbar.className = 'colorpicker';
 var colorSwatches = { 'light' : ['#FFF', '#FFF', '#000', '#006BBD'],
@@ -20,7 +21,9 @@ function CloseCosmosDevTools(event) {
 function switchColor(event) {
   var themeColor = event.target.textContent;
   if(themeColor === 'reset') {
-    document.body.removeChild(cosmosCSS);
+    if(typeof cosmosCSS !== 'undefined') {
+       document.body.removeChild(cosmosCSS);
+    }
     document.body.removeChild(cosmosDevToolbar);
     return;
   }
@@ -42,12 +45,18 @@ function switchColor(event) {
   }
   cssInlineVars=document.createElement('style');
   cssInlineVars.type = 'text/css'; 
-
   if (cssInlineVars.styleSheet)  
     cssInlineVars.styleSheet.cssText = cssCustomVarStyles; 
   else  
       cssInlineVars.appendChild(document.createTextNode(cssCustomVarStyles)); 
-  document.getElementsByTagName("head")[0].appendChild(cssInlineVars); 
+  document.getElementsByTagName("head")[0].appendChild(cssInlineVars);
+  if(typeof cosmosCSS === 'undefined') {
+    cosmosCSS = document.createElement('link');
+    cosmosCSS.setAttribute('rel','stylesheet');
+    cosmosCSS.setAttribute('type','text/css');
+    cosmosCSS.setAttribute('href','https://ricmars.github.io/cosmostheme/cosmosthemeswitcher.css');
+    document.body.appendChild(cosmosCSS);
+  }
 }
 function RunCosmosDevTools() {
   var colorPicker = `<div onclick='switchColor(event);'><div><h4>Theme switcher</h4><button onclick='CloseCosmosDevTools(event);' aria-label='Close the theme switcher' class='icon-close'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" width="20px" height="20px" fill="currentColor">
@@ -59,6 +68,6 @@ function RunCosmosDevTools() {
   colorPicker += `</div></div>`;
   cosmosDevToolbar.innerHTML = colorPicker;
   document.body.appendChild(cosmosDevToolbar);
-  document.body.appendChild(cosmosCSS);
+  document.body.appendChild(cosmosBaseCSS);
 }
 RunCosmosDevTools();
