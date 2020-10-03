@@ -121,11 +121,11 @@ body {
 }
 .colorpicker > div > div {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: center;	
 }
 .colorpicker button {
     border: 1px solid #ccc;
-    padding: 16px;
-    margin: 0 8px;
+    padding: 8px;
+    margin: 0 4px;
 }
