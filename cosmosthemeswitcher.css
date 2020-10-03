@@ -1,0 +1,75 @@
+.case-header,
+.summary-pane > .flex.content-item.item-1,
+.summary-pane > .flex.content-item.item-2,
+.layout-outline-default,
+.layout-outline-default>.header-bar,
+.layout-outline-default>.header-bar>.header-content,
+.layout-noheader-default,
+.flex.content.main-page > .item-1.flex.content-item,
+.main-page > .item-1.flex.content-item > div.flex > .item-2.flex.content-item,
+.flex>.flex.content-item>div.utils-collapsed,
+.flex>.flex.content-item>div.utils-pane,
+.layout-outline-utility,
+div.gridDefault div.default #gridLayoutTable,
+div.gridDefault div.default th.cellCont,
+div[node_name="pxFeed"] div.layout .content-item > div[data-node-id='pzFeed'], 
+div[node_name="pxFeed"] div.layout div[data-node-id='pyPostActions'],
+div[node_name="pxFeed"] div.layout div > div[data-node-id='pyPostActions'],
+.t-container .header > .cell,
+.t-container .row-container,
+.t-container,
+.pz-po-c-list,
+.dialog-container .actertiary > div > div#PEGA_HARNESS,
+BODY {
+    background-color: var(--generalBgColor);
+}
+
+.flex.screen-layout-header_left > .screen-layout-region-main-middle {
+    background-color: var(--generalPageColor);
+}
+
+.flex.content.scrollable-summary-pane > div.flex.content-item.item-1, 
+.flex.content.main-page > .item-1.flex.content-item > .content > .content-item.item-1, 
+.main-page > .item-1 > .content > .item-2, 
+.main-page > .item-1 > .content > .item-3, 
+.main-page > .item-1 > .content > .item-4,
+div.gridDefault div.default #gridLayoutTable,
+div.gridDefault div.default #gridHeaderTable {
+    border-color: #636363;
+}
+
+.header-content SPAN SPAN, 
+.dataValueRead, 
+.dataValueWrite, 
+.dataValueWriteBold,
+.dataLabelForRead, 
+.dataLabelForWrite, 
+.dataLabelForStyle, 
+.dataLabelForStyleTop,
+h1,
+h2,
+h3,
+h4,
+.icon-toggler button.Icon.pzbutton, 
+.icon-toggler button.Icon.pzbutton:focus, 
+.icon-toggler button.Icon.pzbutton:hover,
+.icon-toggler button.Icon.pzbutton:active,
+div.gridDefault div.default th, 
+div.gridDefault div.default li, 
+div.gridDefault div.default tr, 
+div.gridDefault div.default tr[data-row='true']:nth-child(odd) td.gridCell, 
+div.gridDefault div.default tr[data-row='true']:nth-child(even) td.gridCell, 
+div.gridDefault div.default tr.oddRow td.gridCell, div.gridDefault div.default li.oddRow
+div.gridDefault div.default tr.evenRow td.gridCell, div.gridDefault div.default li.evenRow,
+.t-container .header > .cell .header-lable-container,
+label.rb_standard,
+body {
+    color:var(--generalTextColor);
+}
+
+.menu-format-case-details.menu-bar.menu-horizontal > .menu-item.menu-item-active > .menu-item-anchor .menu-item-title, 
+.menu-format-case-details.menu-bar.menu-vertical > .menu-item.menu-item-active > .menu-item-anchor .menu-item-title,
+.menu-format-case-details.menu-bar.menu-horizontal > .menu-item > .menu-item-anchor .menu-item-title, 
+.menu-format-case-details.menu-bar.menu-vertical > .menu-item > .menu-item-anchor .menu-item-title {
+ color: #85868a;
+}
