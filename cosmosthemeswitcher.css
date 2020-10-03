@@ -62,9 +62,25 @@ div.gridDefault div.default tr[data-row='true']:nth-child(even) td.gridCell,
 div.gridDefault div.default tr.oddRow td.gridCell, div.gridDefault div.default li.oddRow
 div.gridDefault div.default tr.evenRow td.gridCell, div.gridDefault div.default li.evenRow,
 .t-container .header > .cell .header-lable-container,
+.stages .pi,
 label.rb_standard,
 body {
     color:var(--generalTextColor);
+}
+
+.content-inner > .field-item > span:empty::after, 
+.content-inner > .field-item > p:empty::after, 
+.content-inner > .field-item > span > span:empty::after, 
+.flex.content-item > .field-item > span:empty::after, 
+.flex.content-item > .field-item > p:empty::after, 
+.content-inner > .field-item > span > span[data-ctl="Text"]:empty:after, 
+.flex.content-item > .field-item > span:empty:after, 
+.flex.content-item > .field-item > span > span[data-ctl="Text"]:empty:after, 
+.flex.content-item.content-field.dataValueRead > span:empty:after, 
+.flex.content-item.content-field.dataValueRead > p:empty:after, 
+.flex.content-item.content-field.dataValueRead > span > span[data-ctl="Text"]:empty:after, 
+.dataValueRead.gridCell span:empty:after {
+    color:var(--generalTextColor)!important;
 }
 
 .menu-format-case-details.menu-bar.menu-horizontal > .menu-item.menu-item-active > .menu-item-anchor .menu-item-title, 
