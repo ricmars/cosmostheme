@@ -1,4 +1,3 @@
-.case-header,
 .summary-pane > .flex.content-item.item-1,
 .summary-pane > .flex.content-item.item-2,
 .layout-outline-default,
@@ -22,6 +21,10 @@ div[node_name="pxFeed"] div.layout div > div[data-node-id='pyPostActions'],
 .dialog-container .actertiary > div > div#PEGA_HARNESS,
 BODY {
     background-color: var(--generalBgColor);
+}
+
+.case-header {
+    background-color: var(--caseHeaderBgColor);
 }
 
 .flex.screen-layout-header_left > .screen-layout-region-main-middle {
