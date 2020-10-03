@@ -1,0 +1,38 @@
+.colorpicker  {
+    position: absolute;
+    bottom:10px;
+    left:0;
+    right:0;
+    display:flex;
+    z-index:1000;
+}
+.colorpicker > div {
+    display:flex;
+    flex-flow: column nowrap;
+    margin: 0 auto;
+    background: #FFF;
+    border: 1px solid rgba(0,0,0,.2);
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 3px 3px rgba(0,0,0,.2);
+}
+.colorpicker h4 {
+    margin:8px 0;
+    color:#000;
+}
+.colorpicker .icon-close {
+    margin: 0 0 0 auto;
+    padding:0;
+    border:none;
+    background:none;
+}
+.colorpicker > div > div {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;	
+}
+.colorpicker button {
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin: 0 4px;
+}
