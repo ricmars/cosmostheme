@@ -2,8 +2,12 @@ var cosmosBaseCSS=document.createElement('link');
 cosmosBaseCSS.setAttribute('rel','stylesheet');
 cosmosBaseCSS.setAttribute('type','text/css');
 cosmosBaseCSS.setAttribute('href','https://ricmars.github.io/cosmostheme/cosmosthemebase.css');
-var cosmosCSS;
+var cosmosCSS = document.createElement('link');
+cosmosCSS.setAttribute('rel','stylesheet');
+cosmosCSS.setAttribute('type','text/css');
+cosmosCSS.setAttribute('href','https://ricmars.github.io/cosmostheme/cosmosthemeswitcher.css');
 var cosmosDevToolbar=document.createElement('div');
+var cosmosInitTool = false;
 cosmosDevToolbar.className = 'colorpicker';
 /* List the different themes by background color, page bg color, text color, interactive color */
 var colorSwatches = { 'light' : ['#FFF', '#FFF', '#000', '#006BBD'],
@@ -22,11 +26,10 @@ function CloseCosmosDevTools(event) {
 function switchColor(event) {
   var themeColor = event.target.textContent;
   if(themeColor === 'reset') {
-    if(typeof cosmosCSS !== 'undefined') {
-       document.body.removeChild(cosmosCSS);
-    }
+    document.body.removeChild(cosmosCSS);
     document.body.removeChild(cosmosDevToolbar);
     document.body.removeChild(cosmosBaseCSS);
+    cosmosInitTool = false;
     return;
   }
   if(typeof (colorSwatches[themeColor]) === 'undefined') {
@@ -52,11 +55,8 @@ function switchColor(event) {
   else  
       cssInlineVars.appendChild(document.createTextNode(cssCustomVarStyles)); 
   document.getElementsByTagName("head")[0].appendChild(cssInlineVars);
-  if(typeof cosmosCSS === 'undefined') {
-    cosmosCSS = document.createElement('link');
-    cosmosCSS.setAttribute('rel','stylesheet');
-    cosmosCSS.setAttribute('type','text/css');
-    cosmosCSS.setAttribute('href','https://ricmars.github.io/cosmostheme/cosmosthemeswitcher.css');
+  if(!cosmosInitTool) {
+    cosmosInitTool = true;
     document.body.appendChild(cosmosCSS);
   }
 }
