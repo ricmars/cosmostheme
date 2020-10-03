@@ -5,6 +5,7 @@ cosmosBaseCSS.setAttribute('href','https://ricmars.github.io/cosmostheme/cosmost
 var cosmosCSS;
 var cosmosDevToolbar=document.createElement('div');
 cosmosDevToolbar.className = 'colorpicker';
+/* List the different themes by background color, page bg color, text color, interactive color */
 var colorSwatches = { 'light' : ['#FFF', '#FFF', '#000', '#006BBD'],
             'dark' : ['#191c24', '#000', '#FFF', '#8db4fd'], 
             'flame' : ['#D23200', '#000', '#FFF','#8db4fd'], 
