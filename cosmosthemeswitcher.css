@@ -93,6 +93,8 @@ body {
     color:var(--generalTextColor)!important;
 }
 
+
+.post-username a,
 a, a:link, a:visited {
     color:var(--generalInteractiveColor);
 }
