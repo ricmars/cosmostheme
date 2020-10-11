@@ -24,6 +24,8 @@ BODY {
     background-color: var(--generalBgColor);
 }
 
+.peek-panel.flex.content>.flex.content-item.item-1 .case-header, 
+.layout-group-tab.preview-content,
 .case-header {
     background-color: var(--caseHeaderBgColor);
 }
