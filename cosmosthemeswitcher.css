@@ -26,10 +26,13 @@ BODY {
 
 .peek-panel.flex.content>.flex.content-item.item-1 .case-header, 
 .layout-group-tab.preview-content,
-.case-header {
-    background-color: var(--caseHeaderBgColor);
+.case-header, 
+.layout-group-tab.preview-content > .layout > .header > .layout-group-item-title {
+    background-color: var(--caseHeaderBgColor)!important;
 }
 
+.layout-group-tab.preview-content > .layout.active:not(.preview-details) > .layout-body,
+.layout-group-tab.preview-content > .layout.active.preview-details .layout-body .case-preview-details,
 .flex.screen-layout-header_left > .screen-layout-region-main-middle {
     background-color: var(--generalPageColor);
 }
