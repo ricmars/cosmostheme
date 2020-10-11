@@ -52,6 +52,7 @@ div.gridDefault div.default #gridHeaderTable {
 .dataLabelForStyleTop,
 .dataValueRead .supporting_text,
 .date-display.dataValueRead,
+.welcome-widget .header-title,
 .btn-action button.Simple.pzbutton:not([disabled]),
 .btn-action button.Simple.pzbutton:not([disabled]):focus, 
 .btn-action button.Simple.pzbutton:not([disabled]):active, 
@@ -111,4 +112,12 @@ a, a:link, a:visited {
 
 .btn-action button.Simple.pzbutton:not([disabled]) {
   opacity: 0.7;
+}
+
+.layout .layout-body .welcome-widget {
+    background: transparent;
+}
+div[data-node-id="WelcomeBanner"] > div.layout > div.layout-body {
+    background: none;
+    border:none
 }
