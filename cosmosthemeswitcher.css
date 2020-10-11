@@ -37,6 +37,7 @@ BODY {
     background-color: var(--generalPageColor);
 }
 
+.flex.content.main-page > .item-1.flex.content-item,
 .flex.content.scrollable-summary-pane > div.flex.content-item.item-1, 
 .flex.content.main-page > .item-1.flex.content-item > .content > .content-item.item-1, 
 .main-page > .item-1 > .content > .item-2, 
@@ -44,7 +45,7 @@ BODY {
 .main-page > .item-1 > .content > .item-4,
 div.gridDefault div.default #gridLayoutTable,
 div.gridDefault div.default #gridHeaderTable {
-    border-color: #636363;
+    border-color: var(--generalBorderColor);
 }
 
 .header-content SPAN SPAN, 
