@@ -12,7 +12,7 @@ cosmosDevToolbar.className = 'colorpicker';
 /* List the different themes by background color, page bg color, text color, interactive color, case header bg color */
 var colorSwatches = { 'light' : ['#FFF', '#e0e0e0', '#000', '#006BBD','#e0e0e0'],
             'dark' : ['#191c24', '#000', '#FFF', '#8db4fd','#191c24'], 
-            'mustard' : ['#f7dc75', '#f3f0dd', '#2b260d','#8db4fd','#d4b541'], 
+            'mustard' : ['#f7dc75', '#f3f0dd', '#2b260d','#1a0cd8','#d4b541'], 
             'mantis' : ['#99c576', '#324c1c', '#FFF','#088600','#33610d'],
             'honey flower' : ['#b48cca', '#9c3f9a', '#FFF','#8c0e65','#4f0063'],
             'deep cerise': ['#D3197C', '#000', '#FFF','#8db4fd','#9a0151'],
