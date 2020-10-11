@@ -4,8 +4,6 @@
 .layout-outline-default>.header-bar,
 .layout-outline-default>.header-bar>.header-content,
 .layout-noheader-default,
-.flex.content.main-page > .item-1.flex.content-item,
-.main-page > .item-1.flex.content-item > div.flex > .item-2.flex.content-item,
 .flex>.flex.content-item>div.utils-collapsed,
 .flex>.flex.content-item>div.utils-pane,
 .layout-outline-utility,
@@ -31,6 +29,8 @@ BODY {
     background-color: var(--caseHeaderBgColor)!important;
 }
 
+.flex.content.main-page > .item-1.flex.content-item,
+.main-page > .item-1.flex.content-item > div.flex > .item-2.flex.content-item,
 .layout-group-tab.preview-content > .layout.active:not(.preview-details) > .layout-body,
 .layout-group-tab.preview-content > .layout.active.preview-details .layout-body .case-preview-details,
 .flex.screen-layout-header_left > .screen-layout-region-main-middle {
