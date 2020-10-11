@@ -40,6 +40,7 @@ function switchColor(event) {
   var generalTextColor = colorSwatches[themeColor][2];
   var generalInteractiveColor = colorSwatches[themeColor][3];
   var caseHeaderBgColor = colorSwatches[themeColor][4];
+  var generalBorderColor = colorSwatches[themeColor][5];
   var cssCustomVarStyles = `:root {
       --generalBgColor: ${generalBgColor};
       --generalPageColor: ${generalPageColor};
