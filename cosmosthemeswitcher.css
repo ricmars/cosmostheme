@@ -80,9 +80,22 @@ div.gridDefault div.default tr.evenRow td.gridCell, div.gridDefault div.default 
 .t-container .header > .cell .header-lable-container,
 .stages .pi,
 label.rb_standard,
+.case-header-actions button.pzbutton.pzhc:focus, 
+.case-header-actions button.pzbutton.pzhc:hover, 
+.case-header-actions button.pzbutton.pzhc:active, 
+.case-header-actions button.pzbutton.pzhc, 
+.case-header .dataValueRead:not(.case-title), 
+.case-header .dataValueWrite,
+.case-header .dataValueRead:not(.case-title) > span, 
+.case-header .dataValueWrite > span,
+.case-title > span > a,
 body {
     color:var(--generalTextColor);
 }
+
+.layout-group-tab.preview-content > .layout > .header > .layout-group-item-title {
+ color:var(--generalTextColor)!important;
+}   
 
 .content-inner > .field-item > span:empty::after, 
 .content-inner > .field-item > p:empty::after, 
