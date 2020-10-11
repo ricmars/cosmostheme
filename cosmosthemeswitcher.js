@@ -15,7 +15,7 @@ var colorSwatches = { 'light' : ['#FFF', '#e0e0e0', '#000', '#006BBD','#e0e0e0',
             'mustard' : ['#f7dc75', '#f3f0dd', '#2b260d','#1a0cd8','#d4b541','#636363'], 
             'mantis' : ['#99c576', '#324c1c', '#FFF','#088600','#33610d','#636363'],
             'honey flower' : ['#b48cca', '#9c3f9a', '#FFF','#8c0e65','#4f0063','#636363'],
-            'deep cerise': ['#D3197C', '#000', '#FFF','#8db4fd','#9a0151','#636363'],
+            'deep cerise': ['#D3197C', '#773057', '#FFF','#8db4fd','#9a0151','#636363'],
           };
 var cssInlineVars;
 function CloseCosmosDevTools(event) {
